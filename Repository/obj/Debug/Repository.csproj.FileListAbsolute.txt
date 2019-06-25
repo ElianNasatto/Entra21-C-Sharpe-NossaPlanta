@@ -1,0 +1,9 @@
+C:\Users\Alunos\source\repos\NossaPlanta\Repository\bin\Debug\Repository.dll
+C:\Users\Alunos\source\repos\NossaPlanta\Repository\bin\Debug\Repository.pdb
+C:\Users\Alunos\source\repos\NossaPlanta\Repository\bin\Debug\Model.dll
+C:\Users\Alunos\source\repos\NossaPlanta\Repository\bin\Debug\Model.pdb
+C:\Users\Alunos\source\repos\NossaPlanta\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\Alunos\source\repos\NossaPlanta\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Alunos\source\repos\NossaPlanta\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\Alunos\source\repos\NossaPlanta\Repository\obj\Debug\Repository.dll
+C:\Users\Alunos\source\repos\NossaPlanta\Repository\obj\Debug\Repository.pdb

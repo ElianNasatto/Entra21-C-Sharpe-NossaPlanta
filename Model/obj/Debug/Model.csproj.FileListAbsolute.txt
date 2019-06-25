@@ -1,0 +1,6 @@
+C:\Users\Alunos\source\repos\NossaPlanta\Model\bin\Debug\Model.dll
+C:\Users\Alunos\source\repos\NossaPlanta\Model\bin\Debug\Model.pdb
+C:\Users\Alunos\source\repos\NossaPlanta\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\Alunos\source\repos\NossaPlanta\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Alunos\source\repos\NossaPlanta\Model\obj\Debug\Model.dll
+C:\Users\Alunos\source\repos\NossaPlanta\Model\obj\Debug\Model.pdb
