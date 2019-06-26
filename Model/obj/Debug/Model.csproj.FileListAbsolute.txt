@@ -4,3 +4,9 @@ C:\Users\Alunos\source\repos\NossaPlanta\Model\obj\Debug\Model.csprojAssemblyRef
 C:\Users\Alunos\source\repos\NossaPlanta\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\Alunos\source\repos\NossaPlanta\Model\obj\Debug\Model.dll
 C:\Users\Alunos\source\repos\NossaPlanta\Model\obj\Debug\Model.pdb
+T:\Documentos\GitHub\NossaPlanta\Model\bin\Debug\Model.dll
+T:\Documentos\GitHub\NossaPlanta\Model\bin\Debug\Model.pdb
+T:\Documentos\GitHub\NossaPlanta\Model\obj\Debug\Model.csprojAssemblyReference.cache
+T:\Documentos\GitHub\NossaPlanta\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+T:\Documentos\GitHub\NossaPlanta\Model\obj\Debug\Model.dll
+T:\Documentos\GitHub\NossaPlanta\Model\obj\Debug\Model.pdb

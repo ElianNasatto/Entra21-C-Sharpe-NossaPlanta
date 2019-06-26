@@ -34,17 +34,21 @@
             this.rbNao = new System.Windows.Forms.RadioButton();
             this.rbSim = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtPeso = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtAltura = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Peso = new System.Windows.Forms.Label();
             this.Altura = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBusca = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnApagar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.lblId = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -55,7 +59,7 @@
             this.btnSalvar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnSalvar.FlatAppearance.BorderSize = 5;
             this.btnSalvar.Font = new System.Drawing.Font("Stencil", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(236, 262);
+            this.btnSalvar.Location = new System.Drawing.Point(12, 345);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(164, 68);
             this.btnSalvar.TabIndex = 7;
@@ -104,12 +108,13 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Green;
-            this.groupBox2.Controls.Add(this.maskedTextBox2);
-            this.groupBox2.Controls.Add(this.maskedTextBox1);
+            this.groupBox2.Controls.Add(this.lblId);
+            this.groupBox2.Controls.Add(this.mtxtPeso);
+            this.groupBox2.Controls.Add(this.mtxtAltura);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.Peso);
             this.groupBox2.Controls.Add(this.Altura);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtNome);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
@@ -119,23 +124,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informações Planta";
             // 
-            // maskedTextBox2
+            // mtxtPeso
             // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(34, 193);
-            this.maskedTextBox2.Mask = "00.0";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 29);
-            this.maskedTextBox2.TabIndex = 18;
+            this.mtxtPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtxtPeso.Location = new System.Drawing.Point(34, 193);
+            this.mtxtPeso.Mask = "000.00";
+            this.mtxtPeso.Name = "mtxtPeso";
+            this.mtxtPeso.Size = new System.Drawing.Size(100, 29);
+            this.mtxtPeso.TabIndex = 18;
             // 
-            // maskedTextBox1
+            // mtxtAltura
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(34, 122);
-            this.maskedTextBox1.Mask = "00.0";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 29);
-            this.maskedTextBox1.TabIndex = 17;
+            this.mtxtAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtxtAltura.Location = new System.Drawing.Point(34, 122);
+            this.mtxtAltura.Mask = "0.00";
+            this.mtxtAltura.Name = "mtxtAltura";
+            this.mtxtAltura.Size = new System.Drawing.Size(100, 29);
+            this.mtxtAltura.TabIndex = 17;
             // 
             // label1
             // 
@@ -167,13 +172,13 @@
             this.Altura.TabIndex = 14;
             this.Altura.Text = "Altura";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(30, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(347, 29);
-            this.textBox1.TabIndex = 13;
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(30, 52);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(347, 29);
+            this.txtNome.TabIndex = 13;
             // 
             // dataGridView1
             // 
@@ -186,8 +191,11 @@
             this.dataGridView1.Location = new System.Drawing.Point(410, 39);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(409, 213);
             this.dataGridView1.TabIndex = 16;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // ColumnId
             // 
@@ -212,21 +220,71 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "Lista";
             // 
-            // textBox2
+            // txtBusca
             // 
-            this.textBox2.Location = new System.Drawing.Point(475, 288);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 18;
-            this.textBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyDown);
+            this.txtBusca.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusca.Location = new System.Drawing.Point(486, 266);
+            this.txtBusca.Name = "txtBusca";
+            this.txtBusca.Size = new System.Drawing.Size(333, 29);
+            this.txtBusca.TabIndex = 18;
+            this.txtBusca.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyDown);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(412, 269);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 24);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Buscar";
+            // 
+            // btnApagar
+            // 
+            this.btnApagar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnApagar.FlatAppearance.BorderSize = 5;
+            this.btnApagar.Font = new System.Drawing.Font("Stencil", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApagar.Location = new System.Drawing.Point(352, 345);
+            this.btnApagar.Name = "btnApagar";
+            this.btnApagar.Size = new System.Drawing.Size(148, 68);
+            this.btnApagar.TabIndex = 20;
+            this.btnApagar.Text = "Apagar";
+            this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Enabled = false;
+            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnEditar.FlatAppearance.BorderSize = 5;
+            this.btnEditar.Font = new System.Drawing.Font("Stencil", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(182, 345);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(164, 68);
+            this.btnEditar.TabIndex = 21;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(291, 12);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(0, 24);
+            this.lblId.TabIndex = 19;
+            this.lblId.Visible = false;
             // 
             // CadastroPlanta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(831, 351);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(831, 416);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnApagar);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtBusca);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
@@ -255,17 +313,21 @@
         private System.Windows.Forms.RadioButton rbNao;
         private System.Windows.Forms.RadioButton rbSim;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mtxtPeso;
+        private System.Windows.Forms.MaskedTextBox mtxtAltura;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Peso;
         private System.Windows.Forms.Label Altura;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBusca;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnApagar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Label lblId;
     }
 }
 
