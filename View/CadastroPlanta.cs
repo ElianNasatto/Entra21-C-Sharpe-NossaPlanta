@@ -19,6 +19,15 @@ namespace View
             InitializeComponent();
         }
 
+        public void LimparCampos()
+        {
+            lblId.Text = "";
+            txtNome.Clear();
+            mtxtAltura.Clear();
+            mtxtPeso.Clear();
+            rbNao.Checked = false;
+            rbSim.Checked = true;
+        }
         private void CadastroPlanta_Load(object sender, EventArgs e)
         {
             AtualizarTabela();
@@ -28,7 +37,7 @@ namespace View
         {
             dataGridView1.Rows.Clear();
             PlantaRepositorio repositorio = new PlantaRepositorio();
-            string busca = txtNome.Text;
+            string busca = txtBusca.Text;
             List<Planta> plantas = repositorio.ObterTodos(busca);
             for (int i = 0; i < plantas.Count; i++)
             {
@@ -40,6 +49,7 @@ namespace View
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             Inserir();
+            LimparCampos();
         }
 
         private void Inserir()
@@ -57,6 +67,7 @@ namespace View
 
         private void textBox2_KeyDown(object sender, KeyEventArgs e)
         {
+
             if (e.KeyCode == Keys.Enter)
             {
                 AtualizarTabela();

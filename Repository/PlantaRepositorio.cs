@@ -42,8 +42,16 @@ namespace Repository
             SqlCommand comando = new SqlCommand();
 
             comando.Connection = conexao;
-            comando.CommandText = @"SELECT * FROM plantas";
-            comando.Parameters.AddWithValue("@NOME", busca);
+            if (busca == "")
+            {
+                comando.CommandText = @"SELECT * FROM plantas";
+
+            }
+            else
+            {
+                comando.CommandText = "SELECT * FROM plantas WHERE nome like @NOME";
+                comando.Parameters.AddWithValue("@NOME", busca);
+            }
 
             DataTable tabela = new DataTable();
             tabela.Load(comando.ExecuteReader());
@@ -132,5 +140,5 @@ namespace Repository
             conexao.Close();
 
         }
-       }
+    }
 }
